@@ -13,7 +13,7 @@ API_AUDIENCE = os.environ.get('API_AUDIENCE')
 
 # AuthError Exception
 '''
-AuthError Exception
+AuthError Exception g
 A standardized way to communicate auth failure modes
 '''
 
