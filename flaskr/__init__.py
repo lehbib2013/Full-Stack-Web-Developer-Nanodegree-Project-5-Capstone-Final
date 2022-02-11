@@ -64,6 +64,8 @@ from flaskr.b_others.blueprint_tieds import tieds_blueprint
 from flaskr.b_others.blueprint_transactions import transactions_blueprint
 
 
+# som parts  of this project inspired from https://auth0.com/docs/quickstart/webapp/python
+
 def format_datetime(value, formatt='medium'):
     date = dateutil.parser.parse(value)
     if formatt == 'full':
