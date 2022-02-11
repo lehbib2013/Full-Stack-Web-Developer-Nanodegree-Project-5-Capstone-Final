@@ -119,8 +119,7 @@ def create_app(test_config=None):
     @app.route('/login', methods=['GET'])
     def login():
         try:
-            return auth0.authorize_redirect(redirect_uri='https://127.0.0.1:\
-                   5000/login-result', audience='mycapstone')
+            return auth0.authorize_redirect(redirect_uri='https://127.0.0.1:5000/login-result', audience='mycapstone')
         except Exception as e:
             print('Error while doing something:', e)
             traceback.print_exc()
@@ -143,7 +142,7 @@ def create_app(test_config=None):
                                               'name': userinfo['name'],
                                               'picture': userinfo['picture']
                                               }
-            return redirect('/captains')
+            return redirect('/captains_list')
         except Exception as e:
             print('Error while doing something:', e)
             traceback.print_exc()
