@@ -1,0 +1,3016 @@
+{
+	"info": {
+		"_postman_id": "232a1b51-d2ce-4949-86ea-544e5c711f2c",
+		"name": "Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "master",
+			"item": [
+				{
+					"name": "transactions",
+					"item": [
+						{
+							"name": "transactions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions?page=1&journal_id=1",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "journal_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "salary",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "salary",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"transaction_type\":\"salary\"\n}\n  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "salary",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "salary",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Supply",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Supply",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Supply",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Supply",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"transaction_type\":\"supply\"\n}\n  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SupplierCashierTransaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SupplierCashierTransaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"supplier\":{\n            \"supplier_id\":\"1\",\"ref_invoice\":\"JKKKK\"\n          }, \n\"transaction_type\":\"supplier\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SupplierCashierTransaction",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SupplierCashierTransaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "CaptainPayment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "CaptainPayment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Credit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"paiment de capitaine\",\"cash_amount\":\"34500\",\"journal_id\":1\n       },\n\"payment\":{\n    \"ref_payment\":\"deuxiem payement\",\n    \"fishing_tied\":\"1\"\n},\n\"transaction_type\":\"captainpayment\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CaptainPayment",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "CaptainPayment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "AvanceCashier",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "AvanceCashier",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"avance capitaine\",\"cash_amount\":\"4500\",\"journal_id\":1\n       },\n\"avance\":{\"ref_avance\":\"avance capitaine \",\"fishing_tied\":\"1\"},\n\"transaction_type\":\"avance\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AvanceCashier",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "AvanceCashier",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"spart part 1\",\"cash_amount\":\"34000\",\"journal_id\":1\n       },\n \"spartpart\":{\"weight_kg\":234,\"unit_price\":45,\"total_price\":47000,\"imputed_captain_share\":4500,\"non_imputed_share\":15,\"fishing_tied\":1,\"cashier_journal_id\":1},\n\"transaction_type\":\"spartpart\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "ConsumableCashierTransaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "ConsumableCashierTransaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"Consum 1x\",\"cash_amount\":\"34000\",\"journal_id\":1\n       },\n \"consumable\":{\"weight_kg\":23,\"unit_price\":20,\"total_price\":46780,\"imputed_captain_share\":0,\"non_imputed_share\":12345,\"fishing_tied\":1,\"cashier_journal_id\":1},\n\"transaction_type\":\"consumable\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ConsumableCashierTransaction",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "ConsumableCashierTransaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "OrdinaryTransaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "OrdinaryTransaction",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "OrdinaryTransaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"transaction_type\":\"ordinary\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OrdinaryTransaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "GeneralCashierTransaction",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "GeneralCashierTransaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "GeneralCashierTransaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"general\":{\n    \"fishing_tied\":1\n},\n\"transaction_type\":\"general\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://myapp49414738.herokuapp.com/transactions",
+									"protocol": "https",
+									"host": [
+										"myapp49414738",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GeneralCashierTransaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Suppliers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"value contains drinks array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.suppliers).to.be.an('array')",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/suppliers?page=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"",
+								"suppliers"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Suppliers",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"id\": 1,\n            \"name\": \"Supp 3uiiii\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com//suppliers",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"",
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Suppliers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com//suppliers/2",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"",
+								"suppliers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Suppliers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"Supp 3\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com//suppliers",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"",
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captains",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com//captains",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"",
+								"captains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captains",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\"name\":\"Mohame cccc\",\"bateau\":\"mohamed sala7\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/captains",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"captains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captains",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"bateau\": \"Bateau hhhhh\",\n            \"id\": 2,\n            \"name\": \"Mohamed Alouve\"\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/captains",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"captains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captains",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/captains/1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"captains",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cashiers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/cashiers",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cashiers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cashiers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n          \"code_cashier\":\"CAISSE01\",\n          \"name_cashier\":\"Cashier 01\", \n          \"last_solde_opening\":\"0\",\n          \"last_solde_closing\":\"0\",\n          \"state\":\"CLOSED\",\n          \"date_open\":\"19-01-2022\",\n          \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/cashiers",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cashiers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cashiers",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cashiers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "journals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/journals?cashier_id=1&annee=2022&mois=2",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"journals"
+							],
+							"query": [
+								{
+									"key": "cashier_id",
+									"value": "1"
+								},
+								{
+									"key": "annee",
+									"value": "2022"
+								},
+								{
+									"key": "mois",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "journals",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "journals",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n \"code\":\"JOURN022022\",\n \"mois\":\"02\", \n\"annee\":\"2022\",\n\"cashier_id\":1,\n\"date_close\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/journals",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"journals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "journals",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "tieds",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/tieds?page=1&captain_id=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tieds"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "captain_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tieds",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " { \n \"date_creation\":\"01-22-2022\",\n \"date_departure\":\"01-22-2022\",\n \"date_arrival\":\"01-30-2022\",\n \"amount_gained_captain\":5678,\n \"amount_gained_company\":999,\n\"total_estimate_price\":678,\n\"total_real_price\":4550,\n\"retained_debt\":566,\n\"previous_remained_debt\":0,\n\"previous_remained_asset\":0,\n\"policy_distribution_id\":1,\n\"captain_id\":1\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/tieds",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tieds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tieds",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "tieds",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\"date_creation\":\"01-01-2022\",\n\"date_departure\":\"01-01-2022\",\n\"date_arrival\":\"01-01-2022\",\n\"amount_gained_captain\":23500,\n\"amount_gained_company\":12890,\n\"total_estimate_price\":\"45890\",\n\"total_real_price\":709,\n\"retained_debt\":4566,\n\"previous_remained_debt\":456,\n\"previous_remained_asset\":0,\n\"policy_distribution_id\":1,\n\"captain_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/tieds",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tieds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/invoices?page=1&supplier_id=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "supplier_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoices",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"montant\":\"5400.89\",\n    \"ref\":\"01-01-2022\",\n    \"date\":\"01-01-2022\",\n    \"supplier_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/invoices",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoices",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "invoices",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "policies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\"designation\":\"xxx\", \"code\":\"POLIC01\" ,\"rate_company\":45.7,\"rate_captain\":55.9,\"amortization_rate\":3}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/policies",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "policies",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "policies",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/policies",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "policies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/policies",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captures",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/captures?tied=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"captures"
+							],
+							"query": [
+								{
+									"key": "tied",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captures",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"specie_name\":\"Poulpe\", \n     \"quantity\":\"45\" ,\n     \"captain_unit_price\":45,\n     \"unit_discount\":55,\n     \"total_price\":3,\n     \"unit_sale_price\":8,\n     \"total_sale_price\":789,\n     \"fishing_tied_id\":1\n     }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/captures",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"captures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captures",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "captures",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "species",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"designation\":\"Langousta\",\"famille\":\"xx\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/species",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"species"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "species",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "species",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/species?page=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"species"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "species",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "pricings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/pricings?page=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"pricings"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pricings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"code_pricing\":\"PRIC001\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/pricings",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"pricings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pricings",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "detailspricing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/detailspricing?pricing_id=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"detailspricing"
+							],
+							"query": [
+								{
+									"key": "pricing_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detailspricing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"pricing_id\":1,\n     \"specie_id\":1,\n     \"border_quantity\":5555,\n     \"unit_price_calc_of_superior_quantity_for_captain\":5555,\n     \"unit_price_calc_of_inferior_quantity_for_captain\":27777,\"unit_price_sale\":6777\n     }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/detailspricing",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"detailspricing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detailspricing",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "detailspricing",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjFnY0IxYmNCdmxnbHpkdTBoN2ZUYyJ9.eyJpc3MiOiJodHRwczovL2Rldi1sbHo5dGYtbi51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjFjNTcxMmUzNmJmNjUwMDcxNWUyYTdjIiwiYXVkIjoibXljYXBzdG9uZSIsImlhdCI6MTY0MzU2MDIxMiwiZXhwIjoxNjQzNTY3NDEyLCJhenAiOiJ4UlVtOUtjY3ROU1VPVFBaZDRzS0p2amVMajN1aEpLZiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmV2ZXJ5dGhpbmciLCJnZXQ6Y2FwdGFpbiIsImdldDpldmVyeXRoaW5nIiwiZ2V0OnN1cHBsaWVyIiwicGF0Y2g6Y2FwdGFpbiIsInBhdGNoOnN1cHBsaWVyIiwicG9zdDpjYXB0YWluIiwicG9zdCBldmVyeXRoaW5nIiwicG9zdDpldmVyeXRoaW5nIiwicG9zdDpzdXBwbGllciJdfQ.bIodXY2sKOBrPWHQX_2vdpzh8tZZsFZB-4iH0jtz8GFPRr7XWtN3fQ6eltsWYsPTAEcuphgsNkalOnsj8w0BqysN7rwp-TNlzzpfokTGsEXzxYn1E9QCryWg_d6XMCa6sdPr_xavgQT1QOjgNYrzzzURYCrAL-xYw5eZLZaGapjnKI1qAANIxPs1pk15vTqNvVwUlDiePpeotw12e96TJxRqTm15JdWTsSQrxthArHdvl4W1PgLcVdfh0pHvi0YZU6wWGJ-lHxP9E5q_qGoBAsfNILdtkrH85PfgrTTmOeIZGQ1x8ZAFPJj8ejxhCXwA9eDTZHqxgDNLkGuFx28Pzg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "agent",
+			"item": [
+				{
+					"name": "transactions",
+					"item": [
+						{
+							"name": "transactions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:5000/transactions?page=1&journal_id=1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "journal_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "salary",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "salary",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"transaction_type\":\"salary\"\n}\n  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:5000/transactions",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "salary",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "salary",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Supply",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Supply",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Supply",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Supply",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"transaction_type\":\"supply\"\n}\n  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:5000/transactions",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SupplierCashierTransaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SupplierCashierTransaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"supplier\":{\n            \"supplier_id\":\"1\",\"ref_invoice\":\"JKKKK\"\n          }, \n\"transaction_type\":\"supplier\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/transactions",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SupplierCashierTransaction",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SupplierCashierTransaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "CaptainPayment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "CaptainPayment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Credit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"paiment de capitaine\",\"cash_amount\":\"34500\",\"journal_id\":1\n       },\n\"payment\":{\n    \"ref_payment\":\"deuxiem payement\",\n    \"fishing_tied\":\"1\"\n},\n\"transaction_type\":\"captainpayment\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:5000/transactions",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CaptainPayment",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "CaptainPayment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "AvanceCashier",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "AvanceCashier",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"avance capitaine\",\"cash_amount\":\"4500\",\"journal_id\":1\n       },\n\"avance\":{\"ref_avance\":\"avance capitaine \",\"fishing_tied\":\"1\"},\n\"transaction_type\":\"avance\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:5000/transactions",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AvanceCashier",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "AvanceCashier",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"spart part 1\",\"cash_amount\":\"34000\",\"journal_id\":1\n       },\n \"spartpart\":{\"weight_kg\":234,\"unit_price\":45,\"total_price\":47000,\"imputed_captain_share\":4500,\"non_imputed_share\":15,\"fishing_tied\":1,\"cashier_journal_id\":1},\n\"transaction_type\":\"spartpart\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:5000/transactions",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "SpartPartCashier",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "ConsumableCashierTransaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "ConsumableCashierTransaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"Consum 1x\",\"cash_amount\":\"34000\",\"journal_id\":1\n       },\n \"consumable\":{\"weight_kg\":23,\"unit_price\":20,\"total_price\":46780,\"imputed_captain_share\":0,\"non_imputed_share\":12345,\"fishing_tied\":1,\"cashier_journal_id\":1},\n\"transaction_type\":\"consumable\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:5000/transactions",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ConsumableCashierTransaction",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "ConsumableCashierTransaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "OrdinaryTransaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "OrdinaryTransaction",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "OrdinaryTransaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"transaction_type\":\"ordinary\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:5000/transactions",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OrdinaryTransaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "GeneralCashierTransaction",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "GeneralCashierTransaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "GeneralCashierTransaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"base\":{\n          \"transaction_sens\":\"Debit\",\n          \"transaction_date\":\"01-01-2012\",\"transaction_reason\":\"xxxx\",\"cash_amount\":\"13900\",\"journal_id\":1\n       },\n\"general\":{\n    \"fishing_tied\":1\n},\n\"transaction_type\":\"general\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:5000/transactions",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GeneralCashierTransaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Suppliers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"value contains drinks array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.suppliers).to.be.an('array')",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/suppliers?page=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"suppliers"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Suppliers",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"id\": 1,\n            \"name\": \"Supp 3uiiii\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/suppliers",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Suppliers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/suppliers/2",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"suppliers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Suppliers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"Supp 3\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/suppliers",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captains",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "captains",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\"name\":\"Ahmed nhhh\",\"bateau\":\"Bateau vvv\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com//captains",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"",
+								"captains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captains",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"bateau\": \"Bateau hhhhh\",\n            \"id\": 2,\n            \"name\": \"Mohamed Alouve\"\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com//captains",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"",
+								"captains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captains",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/captains/1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"captains",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cashiers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/cashiers",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cashiers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cashiers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n          \"code_cashier\":\"CAISSE01\",\n          \"name_cashier\":\"Cashier 01\", \n          \"last_solde_opening\":\"0\",\n          \"last_solde_closing\":\"\",\n          \"state\":\"CLOSED\",\n          \"date_open\":\"19-01-2022\",\n          \"date_close\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/cashiers",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cashiers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cashiers",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "cashiers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "journals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/journals?cashier_id=1&annee=2022&mois=2",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"journals"
+							],
+							"query": [
+								{
+									"key": "cashier_id",
+									"value": "1"
+								},
+								{
+									"key": "annee",
+									"value": "2022"
+								},
+								{
+									"key": "mois",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "journals",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "journals",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n \"code\":\"JOURN022022\",\n \"mois\":\"02\", \n\"annee\":\"2022\",\n\"cashier_id\":1,\n\"date_close\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/journals",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"journals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "journals",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "tieds",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/tieds?page=1&captain_id=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tieds"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "captain_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tieds",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " { \n \"date_creation\":\"01-22-2022\",\n \"date_departure\":\"01-22-2022\",\n \"date_arrival\":\"01-30-2022\",\n \"amount_gained_captain\":5678,\n \"amount_gained_company\":999,\n\"total_estimate_price\":678,\n\"total_real_price\":4550,\n\"retained_debt\":566,\n\"previous_remained_debt\":0,\n\"previous_remained_asset\":0,\n\"policy_distribution_id\":1,\n\"captain_id\":1\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/tieds",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tieds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tieds",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "tieds",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\"date_creation\":\"01-01-2022\",\n\"date_departure\":\"01-01-2022\",\n\"date_arrival\":\"01-01-2022\",\n\"amount_gained_captain\":23500,\n\"amount_gained_company\":12890,\n\"total_estimate_price\":\"45890\",\n\"total_real_price\":709,\n\"retained_debt\":4566,\n\"previous_remained_debt\":456,\n\"previous_remained_asset\":0,\n\"policy_distribution_id\":1,\n\"captain_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/tieds",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tieds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/invoices?page=1&supplier_id=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "supplier_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoices",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"montant\":\"5400.89\",\n    \"ref\":\"01-01-2022\",\n    \"date\":\"01-01-2022\",\n    \"supplier_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/invoices",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoices",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "invoices",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "policies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\"designation\":\"xxx\", \"code\":\"POLIC01\" ,\"rate_company\":45.7,\"rate_captain\":55.9,\"amortization_rate\":3}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/policies",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "policies",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "policies",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/policies",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "policies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/policies",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captures",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/captures?tied=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"captures"
+							],
+							"query": [
+								{
+									"key": "tied",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captures",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"specie_name\":\"Poulpe\", \n     \"quantity\":\"45\" ,\n     \"captain_unit_price\":45,\n     \"unit_discount\":55,\n     \"total_price\":3,\n     \"unit_sale_price\":8,\n     \"total_sale_price\":789,\n     \"fishing_tied_id\":1\n     }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/captures",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"captures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "captures",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "captures",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "species",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"designation\":\"Langousta\",\"famille\":\"xx\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/species",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"species"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "species",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "species",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/species?page=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"species"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "species",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "pricings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/pricings?page=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"pricings"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pricings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "pricings",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "detailspricing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/detailspricing?pricing_id=1",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"detailspricing"
+							],
+							"query": [
+								{
+									"key": "pricing_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detailspricing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"pricing_id\":1,\n     \"specie_id\":1,\n     \"border_quantity\":5555,\n     \"unit_price_calc_of_superior_quantity_for_captain\":5555,\n     \"unit_price_calc_of_inferior_quantity_for_captain\":27777,\"unit_price_sale\":6777\n     }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://myapp49414738.herokuapp.com/detailspricing",
+							"protocol": "https",
+							"host": [
+								"myapp49414738",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"detailspricing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detailspricing",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "detailspricing",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjFnY0IxYmNCdmxnbHpkdTBoN2ZUYyJ9.eyJpc3MiOiJodHRwczovL2Rldi1sbHo5dGYtbi51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjFjNTZkMzllMDljODMwMDZmMTlhZGU0IiwiYXVkIjoibXljYXBzdG9uZSIsImlhdCI6MTY0MzU2MjA2MiwiZXhwIjoxNjQzNTY5MjYyLCJhenAiOiJ4UlVtOUtjY3ROU1VPVFBaZDRzS0p2amVMajN1aEpLZiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmNhcHRhaW4iLCJnZXQ6ZXZlcnl0aGluZyIsImdldDpzdXBwbGllciJdfQ.RREl3iPC5cidraMwqJtn1qYwyocCkPduBXNKWIMwvdHtFNx6rP8eB0MXRa5fBHN5fjt4iO-cRk5qZc7y1VHxJQCc0IqT0LQjwpUwgsGEVryxZOfjpepr1dUe3WfKlo6MLMQZ31evpLvcjrgayQgYWQjQqhVutVNXCZHYT3i0a3xFAM7TUBTb3_bgsGjrJ_QoCJEjdrwkLo83CTHujijHeQ244UZb3q8oEfeSxQcAfjhMV06Q2uieB_wsxYYq7w-2Ky0gxx46oD9Vc7mmQLyRDZYgmXyqp_9wqZUem2gLyU9rJ8nIlqpZsIsdW2XWBqZFWrBzXc6_LfbkH4j9W448XA",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}

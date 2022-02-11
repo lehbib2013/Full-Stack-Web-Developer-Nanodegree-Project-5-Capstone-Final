@@ -1,0 +1,17 @@
+{% extends 'layouts/main.html' %}
+{% block title %}AYA | Captains{% endblock %}
+{% block content %}
+<ul class="items">
+	{% for captain in captains %}
+	<li>
+		<a href="/captains/{{ captain.id }}">
+			<i class="fas fa-user"></i>
+			<div class="item">
+				<h5>{{ captain.name }}</h5>
+				
+			</div>
+		</a>
+	</li>
+	{% endfor %}
+</ul>
+{% endblock %}
