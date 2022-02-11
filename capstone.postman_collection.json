@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "232a1b51-d2ce-4949-86ea-544e5c711f2c",
-		"name": "Heroku",
+		"_postman_id": "4a6b7493-899b-4940-83d4-ffe2c6d41cc3",
+		"name": "capstone",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -17,13 +17,14 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions?page=1&journal_id=1",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions?page=1&journal_id=1",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									],
@@ -64,13 +65,14 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -133,13 +135,14 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -170,13 +173,15 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "http://127.0.0.1:5000/transactions",
+									"protocol": "http",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -223,13 +228,14 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -276,13 +282,14 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -338,13 +345,14 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -399,13 +407,14 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -460,13 +469,14 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -513,13 +523,14 @@
 									}
 								},
 								"url": {
-									"raw": "https://myapp49414738.herokuapp.com/transactions",
-									"protocol": "https",
+									"raw": "127.0.0.1:5000/transactions",
 									"host": [
-										"myapp49414738",
-										"herokuapp",
-										"com"
+										"127",
+										"0",
+										"0",
+										"1"
 									],
+									"port": "5000",
 									"path": [
 										"transactions"
 									]
@@ -573,15 +584,16 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/suppliers?page=1",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/suppliers?page=1",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
-								"",
 								"suppliers"
 							],
 							"query": [
@@ -609,15 +621,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com//suppliers",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/suppliers",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
-								"",
 								"suppliers"
 							]
 						}
@@ -630,15 +642,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com//suppliers/2",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/suppliers/2",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
-								"",
 								"suppliers",
 								"2"
 							]
@@ -661,15 +673,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com//suppliers",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/suppliers",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
-								"",
 								"suppliers"
 							]
 						}
@@ -680,20 +692,7 @@
 					"name": "captains",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://myapp49414738.herokuapp.com//captains",
-							"protocol": "https",
-							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
-							],
-							"path": [
-								"",
-								"captains"
-							]
-						}
+						"header": []
 					},
 					"response": []
 				},
@@ -712,13 +711,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/captains",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/captains",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"captains"
 							]
@@ -741,13 +742,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/captains",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/captains",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"captains"
 							]
@@ -761,13 +764,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/captains/1",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/captains/1",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"captains",
 								"1"
@@ -782,13 +787,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/cashiers",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/cashiers",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"cashiers"
 							]
@@ -803,7 +809,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n          \"code_cashier\":\"CAISSE01\",\n          \"name_cashier\":\"Cashier 01\", \n          \"last_solde_opening\":\"0\",\n          \"last_solde_closing\":\"0\",\n          \"state\":\"CLOSED\",\n          \"date_open\":\"19-01-2022\",\n          \n}",
+							"raw": "{\n          \"code_cashier\":\"CAISSE01\",\n          \"name_cashier\":\"Cashier 01\", \n          \"last_solde_opening\":\"0\",\n          \"last_solde_closing\":\"\",\n          \"state\":\"CLOSED\",\n          \"date_open\":\"19-01-2022\",\n          \"date_close\":\"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -811,13 +817,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/cashiers",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/cashiers",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"cashiers"
 							]
@@ -829,10 +837,7 @@
 					"name": "cashiers",
 					"request": {
 						"method": "PATCH",
-						"header": [],
-						"url": {
-							"raw": ""
-						}
+						"header": []
 					},
 					"response": []
 				},
@@ -850,13 +855,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/journals?cashier_id=1&annee=2022&mois=2",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/journals?cashier_id=1&annee=2022&mois=2",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"journals"
 							],
@@ -901,13 +907,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/journals",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/journals",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"journals"
 							]
@@ -929,13 +937,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/tieds?page=1&captain_id=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/tieds?page=1&captain_id=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"tieds"
 							],
@@ -968,13 +977,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/tieds",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/tieds",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"tieds"
 							]
@@ -1005,13 +1015,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/tieds",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/tieds",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"tieds"
 							]
@@ -1025,13 +1036,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/invoices?page=1&supplier_id=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/invoices?page=1&supplier_id=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"invoices"
 							],
@@ -1064,13 +1076,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/invoices",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/invoices",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"invoices"
 							]
@@ -1109,13 +1122,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/policies",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/policies",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"policies"
 							]
@@ -1137,13 +1151,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/policies",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/policies",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"policies"
 							]
@@ -1157,13 +1172,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/policies",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/policies",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"policies"
 							]
@@ -1177,13 +1193,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/captures?tied=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/captures?tied=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"captures"
 							],
@@ -1212,13 +1229,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/captures",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/captures",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"captures"
 							]
@@ -1257,13 +1275,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/species",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/species",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"species"
 							]
@@ -1285,13 +1304,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/species?page=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/species?page=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"species"
 							],
@@ -1319,13 +1339,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/pricings?page=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/pricings?page=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"pricings"
 							],
@@ -1343,28 +1364,7 @@
 					"name": "pricings",
 					"request": {
 						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\"code_pricing\":\"PRIC001\" }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/pricings",
-							"protocol": "https",
-							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
-							],
-							"path": [
-								"pricings"
-							]
-						}
+						"header": []
 					},
 					"response": []
 				},
@@ -1382,13 +1382,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/detailspricing?pricing_id=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/detailspricing?pricing_id=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"detailspricing"
 							],
@@ -1417,13 +1418,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/detailspricing",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/detailspricing",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"detailspricing"
 							]
@@ -2058,13 +2060,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/suppliers?page=1",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/suppliers?page=1",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"suppliers"
 							],
@@ -2093,13 +2097,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/suppliers",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/suppliers",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"suppliers"
 							]
@@ -2113,13 +2118,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/suppliers/2",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/suppliers/2",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"suppliers",
 								"2"
@@ -2143,13 +2149,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/suppliers",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/suppliers",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"suppliers"
 							]
@@ -2180,15 +2187,16 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com//captains",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/captains",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
-								"",
 								"captains"
 							]
 						}
@@ -2210,15 +2218,16 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com//captains",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/captains",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
-								"",
 								"captains"
 							]
 						}
@@ -2231,13 +2240,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/captains/1",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/captains/1",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"captains",
 								"1"
@@ -2252,13 +2263,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/cashiers",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/cashiers",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"cashiers"
 							]
@@ -2281,13 +2293,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/cashiers",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/cashiers",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"cashiers"
 							]
@@ -2317,13 +2331,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/journals?cashier_id=1&annee=2022&mois=2",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/journals?cashier_id=1&annee=2022&mois=2",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"journals"
 							],
@@ -2368,13 +2383,15 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/journals",
-							"protocol": "https",
+							"raw": "http://127.0.0.1:5000/journals",
+							"protocol": "http",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"journals"
 							]
@@ -2396,13 +2413,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/tieds?page=1&captain_id=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/tieds?page=1&captain_id=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"tieds"
 							],
@@ -2435,13 +2453,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/tieds",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/tieds",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"tieds"
 							]
@@ -2472,13 +2491,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/tieds",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/tieds",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"tieds"
 							]
@@ -2492,13 +2512,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/invoices?page=1&supplier_id=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/invoices?page=1&supplier_id=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"invoices"
 							],
@@ -2531,13 +2552,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/invoices",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/invoices",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"invoices"
 							]
@@ -2576,13 +2598,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/policies",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/policies",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"policies"
 							]
@@ -2604,13 +2627,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/policies",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/policies",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"policies"
 							]
@@ -2624,13 +2648,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/policies",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/policies",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"policies"
 							]
@@ -2644,13 +2669,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/captures?tied=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/captures?tied=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"captures"
 							],
@@ -2679,13 +2705,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/captures",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/captures",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"captures"
 							]
@@ -2724,13 +2751,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/species",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/species",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"species"
 							]
@@ -2752,13 +2780,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/species?page=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/species?page=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"species"
 							],
@@ -2786,13 +2815,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/pricings?page=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/pricings?page=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"pricings"
 							],
@@ -2828,13 +2858,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/detailspricing?pricing_id=1",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/detailspricing?pricing_id=1",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"detailspricing"
 							],
@@ -2863,13 +2894,14 @@
 							}
 						},
 						"url": {
-							"raw": "https://myapp49414738.herokuapp.com/detailspricing",
-							"protocol": "https",
+							"raw": "127.0.0.1:5000/detailspricing",
 							"host": [
-								"myapp49414738",
-								"herokuapp",
-								"com"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"detailspricing"
 							]
@@ -2924,6 +2956,32 @@
 					}
 				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "https://myapp49414738.herokuapp.com"
 		}
 	]
 }
